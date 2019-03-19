@@ -1,9 +1,84 @@
 PackratFormat: 1.4
 PackratVersion: 0.5.0
-RVersion: 3.5.2
+RVersion: 3.3.2
 Repos: CRAN=https://cran.rstudio.com/
+
+Package: BH
+Source: CRAN
+Version: 1.69.0-1
+Hash: 15f597ed227897f4f793b6161260f4b9
+
+Package: R6
+Source: CRAN
+Version: 2.2.2
+Hash: b2366cd9d2f3851a5704b4e192b985c2
+
+Package: Rcpp
+Source: CRAN
+Version: 0.12.16
+Hash: 8cc9dc88c11acdcf8a6dec4a0f1500bc
+
+Package: Rook
+Source: CRAN
+Version: 1.1-1
+Hash: d53d9e345096f5c8b5c535dfe9175e2f
+Requires: brew
+
+Package: brew
+Source: CRAN
+Version: 1.0-6
+Hash: 931f9972deae0f205e1c78a51f33149b
+
+Package: crayon
+Source: CRAN
+Version: 1.3.4
+Hash: ff2840dd9b0d563fc80377a5a45510cd
+
+Package: httpuv
+Source: CRAN
+Version: 1.4.1
+Hash: a50df99e50bfbcd5825766034abefe92
+Requires: BH, Rcpp, later, promises
+
+Package: jsonlite
+Source: CRAN
+Version: 1.5
+Hash: 9c51936d8dd00b2f1d4fe9d10499694c
+
+Package: later
+Source: CRAN
+Version: 0.7.1
+Hash: 0fdd3cc503e62e512c5a50d24fe46cbf
+Requires: BH, Rcpp, rlang
+
+Package: magrittr
+Source: CRAN
+Version: 1.5
+Hash: bdc4d48c3135e8f3b399536ddf160df4
 
 Package: packrat
 Source: CRAN
 Version: 0.5.0
 Hash: 498643e765d1442ba7b1160a1df3abf9
+
+Package: plumber
+Source: CRAN
+Version: 0.4.4
+Hash: f19938cb285dcf36a63f00f762d563c5
+Requires: R6, crayon, httpuv, jsonlite, stringi
+
+Package: promises
+Source: CRAN
+Version: 1.0.1
+Hash: 4ca870130486f6561eecf70e2bc7474f
+Requires: R6, Rcpp, later, magrittr, rlang
+
+Package: rlang
+Source: CRAN
+Version: 0.2.0
+Hash: 647e2e50a72557d1a770dcd6701e562b
+
+Package: stringi
+Source: CRAN
+Version: 1.1.7
+Hash: d3dbb18da9a7b73a5b59416e33ad2cbd

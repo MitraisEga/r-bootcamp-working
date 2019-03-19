@@ -1,4 +1,5 @@
-source("R/sample1.R")
+source("R/lib.init.R")
+library("plumber")
 
-x <- loadTagsFromCsv()
-plot(x)
+api <- plumb("R/API.R")
+api$run(port=10000)
